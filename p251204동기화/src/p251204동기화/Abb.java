@@ -1,0 +1,56 @@
+package p251204동기화;
+
+class Counter {
+	int value;
+
+	synchronized void inc() {
+		value++;
+	}
+
+	synchronized void dec() {
+		value--;
+	}
+
+	synchronized void print() {
+		System.out.println(value);
+	}
+}
+
+// Thread 클래스
+class MyThread extends Thread {
+	Counter c;
+
+	MyThread(Counter c) {
+		this.c = c;
+	}
+
+	@Override
+	public void run() {
+		int i = 0;
+		while ( i < 20000 ) {
+			c.inc();
+			c.dec();
+			if (i % 40 == 0) {
+				c.print();
+			}
+			try {
+				Thread.sleep((int) (Math.random() * 2));
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			i++;
+		}
+	}
+}
+
+public class Abb {
+
+	public static void main(String[] args) {
+		Counter c = new Counter();
+		MyThread t = new MyThread(c);
+		t.start();
+		t = new MyThread(c);
+		t.start();
+	}
+
+}

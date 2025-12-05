@@ -1,0 +1,11 @@
+package p251202;
+
+public class messageLoop implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package p251204생산자;
+
+public class Buffer {
+	int mdata;
+	boolean empty = true;
+	
+	synchronized int get() {
+		
+	}
+	
+	synchronized void put(int data) {
+		
+	}
+}

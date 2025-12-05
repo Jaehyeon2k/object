@@ -1,0 +1,14 @@
+package p251204생산자;
+
+public class Buffer {
+	int data;
+	boolean empty = true;
+	
+	int get() {
+		
+	}
+	
+	void put() {
+		
+	}
+}

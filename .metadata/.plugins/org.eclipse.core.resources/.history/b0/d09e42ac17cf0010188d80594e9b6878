@@ -1,0 +1,11 @@
+package p251202;
+
+public class messageLoop implements Runnable {
+
+	@Override
+	public void run() {
+		// String 배열 객체 생성 및 초기화
+		String messages[] = {
+		}
+	}
+}

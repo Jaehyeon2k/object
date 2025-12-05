@@ -1,0 +1,9 @@
+package p251204생산자;
+
+public class Consumer extends Thread {
+	Buffer mbuffer;
+
+	public Consumer(Buffer buffer) {
+		mbuffer = buffer;
+	}
+}

@@ -1,0 +1,26 @@
+package p251204생산자;
+
+public class Consumer extends Thread {
+	Buffer mbuffer;
+
+	public Consumer(Buffer buffer) {
+		mbuffer = buffer;
+	}
+
+	@Override
+	public void run() {
+		// 10개의 케이크를 소비한다.
+		for (int i = 0; i < 10; i++) {
+			int n = mbuffer.get();
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("소비자: %d번 케이크 소비%n", n);
+		}
+	}
+	
+	
+}

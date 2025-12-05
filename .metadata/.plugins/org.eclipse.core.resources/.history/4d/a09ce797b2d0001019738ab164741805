@@ -1,0 +1,18 @@
+package p251204생산자;
+
+public class Buffer {
+	int mdata;
+	boolean empty = true;
+	
+	synchronized int get() {
+		while(empty) {
+			// 소비자는 버퍼가 비어있으면 wait하라.
+			wait();
+		}
+		return 0;
+	}
+	
+	synchronized void put(int data) {
+		
+	}
+}

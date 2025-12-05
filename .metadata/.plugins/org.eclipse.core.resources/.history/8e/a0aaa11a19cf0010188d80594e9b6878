@@ -1,0 +1,23 @@
+package p251202;
+
+public class messageLoop implements Runnable {
+
+	@Override
+	public void run() {
+		// String 배열 객체 생성 및 초기화
+		String messages[] = { "Pride will have a fall.",
+				"Power is dangerous unless you have humility",
+				"3 message",
+				"4 message"
+				};
+		try {
+			for (int i = 0; i < messages.length; i++) {
+				System.out.println(messages[i]);
+				Thread.sleep(2000);
+			}
+		} catch (InterruptedException e) {
+			System.out.println("아직 끝나지 않았는데 인터럽트가 !!!");
+			e.printStackTrace();
+		}
+	}
+}

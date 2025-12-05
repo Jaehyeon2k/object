@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;p251127쓰레드&apos; to &apos;p251127Thread&apos;&#x0D;&#x0A;- Original project: &apos;p251127Thread&apos;&#x0D;&#x0A;- Original element: &apos;p251127Thread/src/p251127쓰레드&apos;&#x0D;&#x0A;- Renamed element: &apos;p251127Thread/src/p251127Thread&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;p251127쓰레드&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;p251127쓰레드" name="p251127Thread" qualified="false" references="true" stamp="1764203893441" textual="false" version="1.0"/>
+</session>

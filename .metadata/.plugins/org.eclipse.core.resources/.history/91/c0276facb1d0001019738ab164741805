@@ -1,0 +1,18 @@
+package p251204생산자;
+
+public class Producer extends Thread {
+	Buffer mbuffer;
+	
+	public Producer(Buffer buffer) {
+		mbuffer = buffer;
+	}
+
+	@Override
+	public void run() {
+		// 10개의 케이크를 생산한다.
+		
+	}
+	
+	
+
+}

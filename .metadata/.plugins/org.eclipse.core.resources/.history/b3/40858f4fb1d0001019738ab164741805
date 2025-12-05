@@ -1,0 +1,10 @@
+package p251204생산자;
+
+public class Abb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

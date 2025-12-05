@@ -1,0 +1,10 @@
+package p251204생산자;
+
+public class Producer extends Thread {
+	Buffer mbuffer;
+	
+	public Producer(Buffer buffer) {
+		mbuffer = buffer;
+	}
+
+}

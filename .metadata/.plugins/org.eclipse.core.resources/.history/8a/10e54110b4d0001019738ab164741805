@@ -1,0 +1,19 @@
+package p251204생산자;
+
+public class Producer extends Thread {
+	Buffer mbuffer;
+
+	public Producer(Buffer buffer) {
+		mbuffer = buffer;
+	}
+
+	@Override
+	public void run() {
+		// 10개의 케이크를 생산한다.
+		for (int i = 0; i < 10; i++) {
+			mbuffer.put(i);
+			System.out.printf("생산자: %d번 케이크 생산%n", i);
+		}
+	}
+
+}

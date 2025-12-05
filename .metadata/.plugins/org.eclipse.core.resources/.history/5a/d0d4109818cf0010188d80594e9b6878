@@ -1,0 +1,15 @@
+package p251202;
+
+public class Abb {
+
+	public static void main(String[] args) {
+		int tries = 0;
+		
+		System.out.println("Main 시작");
+		
+		Thread t = new Thread(new messageLoop());
+		t.start();
+		System.out.println("Main Thread 시작 후");
+	}
+
+}

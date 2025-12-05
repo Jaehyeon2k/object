@@ -1,0 +1,18 @@
+package p251202;
+
+import java.awt.desktop.ScreenSleepEvent;
+
+public class Abb {
+
+	public static void main(String[] args) {
+		int tries = 0;
+		
+		System.out.println("Main 시작");
+		
+		Thread t = new Thread(new messageLoop());
+		t.start();
+		ScreenSleepEvent(1000);
+		System.out.println("Main Thread 시작 후");
+	}
+
+}

@@ -1,0 +1,22 @@
+package p251204동기화;
+
+class Counter {
+	int value;
+	
+	void inc() {
+		value++;
+	}
+	
+	void dec() {
+		value--;
+	}
+}
+
+public class Abb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

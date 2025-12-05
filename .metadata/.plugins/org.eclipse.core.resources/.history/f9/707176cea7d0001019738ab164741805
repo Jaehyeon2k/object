@@ -1,0 +1,10 @@
+package p251204동기화;
+
+public class Abb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package p251202;
+
+public class Abb {
+
+	public static void main(String[] args) throws InterruptedException {
+		int tries = 0;
+		
+		System.out.println("Main 시작");
+		
+		Thread t = new Thread(new messageLoop());
+		t.start();
+		
+		System.out.println("Main Thread 시작 후");
+		while(t.isAlive()) {
+			System.out.println("Main 기다림" + tries);
+			t.join(1000);
+			tries++;
+			if(tries > 2) {
+				System.out.println("참을 수 없네요!");
+				t.interrupt();
+				t.join();
+				
+			}
+		}
+	}
+
+}

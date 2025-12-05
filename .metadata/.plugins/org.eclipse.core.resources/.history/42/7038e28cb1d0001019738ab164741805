@@ -1,0 +1,9 @@
+package p251204생산자;
+
+public class Producer extends Thread {
+
+	public Producer(Buffer buffer) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
