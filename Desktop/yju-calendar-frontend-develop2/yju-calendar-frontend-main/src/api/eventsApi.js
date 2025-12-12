@@ -10,6 +10,11 @@ export async function fetchEvents() {
   const res = await api.get("/events");
   return res.data;
 }
+export async function fetchSchoolEventsByYear(year) {
+  const res = await fetch(`http://localhost:4100/api/school-events?year=${year}`);
+  const json = await res.json();
+  return json.events || [];
+}
 
 export async function createEvent(event) {
   const res = await api.post("/events", event);
@@ -23,12 +28,4 @@ export async function updateEvent(id, patch) {
 
 export async function deleteEvent(id) {
   await api.delete(`/events/${id}`);
-}
-
-// 🔹 학교 일정(SCOPE = 'SCHOOL')만 가져오는 함수
-export async function fetchSchoolEvents() {
-  const res = await api.get("/events", {
-    params: { scope: "SCHOOL" },
-  });
-  return res.data;
 }

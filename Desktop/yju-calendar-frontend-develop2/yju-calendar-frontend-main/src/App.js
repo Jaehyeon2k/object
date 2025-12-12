@@ -1,10 +1,12 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+
 import CalendarPage from "./pages/CalendarPage";
 import EventsManage from "./pages/EventsManage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+
 import AuthProvider, { useAuth } from "./auth/AuthContext";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import { ThemeProvider, useTheme } from "./theme/ThemeContext";
@@ -21,6 +23,18 @@ function NavBar() {
     color: "var(--text-color)",
     background: "var(--nav-button-bg)",
     marginRight: 8,
+    display: "inline-flex",
+    alignItems: "center",
+    gap: 6,
+  };
+
+  const buttonStyle = {
+    padding: "6px 10px",
+    borderRadius: 8,
+    border: "none",
+    background: "var(--nav-button-bg)",
+    color: "var(--text-color)",
+    cursor: "pointer",
   };
 
   return (
@@ -55,14 +69,11 @@ function NavBar() {
         <button
           onClick={toggleTheme}
           style={{
-            padding: "6px 10px",
-            borderRadius: 8,
-            border: "none",
+            ...buttonStyle,
             background: "var(--toggle-bg)",
-            color: "var(--text-color)",
-            cursor: "pointer",
             fontSize: 12,
           }}
+          type="button"
         >
           {theme === "dark" ? "라이트 모드" : "다크 모드"}
         </button>
@@ -73,17 +84,7 @@ function NavBar() {
             <span style={{ marginRight: 4 }}>
               {user.displayName || user.email}
             </span>
-            <button
-              onClick={logout}
-              style={{
-                padding: "6px 10px",
-                borderRadius: 8,
-                border: "none",
-                background: "var(--nav-button-bg)",
-                color: "var(--text-color)",
-                cursor: "pointer",
-              }}
-            >
+            <button onClick={logout} style={buttonStyle} type="button">
               로그아웃
             </button>
           </>
@@ -120,16 +121,22 @@ export default function App() {
       <ThemeProvider>
         <BrowserRouter>
           <NavBar />
+
           <Routes>
+            {/* 기본 진입 */}
             <Route path="/" element={<Navigate to="/calendar" replace />} />
+
             {/* 보호 구간: 로그인 필요 */}
             <Route element={<ProtectedRoute />}>
               <Route path="/calendar" element={<CalendarPage />} />
               <Route path="/manage" element={<EventsManage />} />
             </Route>
+
             {/* 공개 구간 */}
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+
+            {/* 404 */}
             <Route
               path="*"
               element={

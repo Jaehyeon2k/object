@@ -1,185 +1,6 @@
 {
   "events": [
-    {
-      "id": 1,
-      "title": "신정",
-      "start": "2025-01-01",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 2,
-      "title": "동계방학",
-      "start": "2024-12-23",
-      "end": "2025-03-02",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 3,
-      "title": "2025학년도 1학기 개강",
-      "start": "2025-03-03",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 4,
-      "title": "수강정정",
-      "start": "2025-03-03",
-      "end": "2025-03-07",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 5,
-      "title": "1학기 수업일수 1/4선",
-      "start": "2025-03-28",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 6,
-      "title": "1학기 중간고사",
-      "start": "2025-04-21",
-      "end": "2025-04-25",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 7,
-      "title": "1학기 수업일수 1/2선",
-      "start": "2025-04-25",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 8,
-      "title": "1학기 수업일수 3/4선",
-      "start": "2025-05-23",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 9,
-      "title": "현충일",
-      "start": "2025-06-06",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 10,
-      "title": "1학기 기말고사",
-      "start": "2025-06-23",
-      "end": "2025-06-27",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 11,
-      "title": "1학기 종강",
-      "start": "2025-06-27",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 12,
-      "title": "하계방학",
-      "start": "2025-06-30",
-      "end": "2025-08-29",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 13,
-      "title": "2학기 개강",
-      "start": "2025-09-01",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 14,
-      "title": "수강정정",
-      "start": "2025-09-01",
-      "end": "2025-09-05",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 15,
-      "title": "추석연휴",
-      "start": "2025-10-06",
-      "end": "2025-10-08",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 16,
-      "title": "2학기 중간고사",
-      "start": "2025-10-20",
-      "end": "2025-10-24",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 17,
-      "title": "2학기 수업일수 3/4선",
-      "start": "2025-11-21",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 18,
-      "title": "2학기 기말고사",
-      "start": "2025-12-15",
-      "end": "2025-12-19",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 19,
-      "title": "성탄절",
-      "start": "2025-12-25",
-      "end": null,
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
-    {
-      "id": 20,
-      "title": "동계방학",
-      "start": "2025-12-22",
-      "end": "2026-03-02",
-      "allDay": true,
-      "scope": "SCHOOL",
-      "owner": null
-    },
+    
     {
       "title": "나 asdfasdf임",
       "start": "2025-11-27",
@@ -197,6 +18,15 @@
       "scope": "MY",
       "owner": "Y8WtCys8SpOSK3HP54v8YsFJsTm1",
       "id": 26
+    },
+    {
+      "title": "ㅁㄴㅇㄻㄴㅇㄹ",
+      "start": "2025-12-03",
+      "end": "",
+      "allDay": true,
+      "scope": "MY",
+      "owner": "Gx7FTaI6YGglmofPbMdXINtqHMe2",
+      "id": 27
     }
   ]
 }
