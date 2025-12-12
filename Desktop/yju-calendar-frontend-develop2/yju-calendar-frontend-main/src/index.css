@@ -1,0 +1,161 @@
+/* src/index.css */
+/* ---------------------------------------------------
+   전역 기본값 (data-theme 없을 때 → 기본 다크로 동작)
+---------------------------------------------------- */
+:root {
+  --body-bg: #0b0c10;
+  --text-color: #e9eef4;
+
+  --fc-border-color: #1f2229;
+  --fc-bg: #0b0c10;
+  --fc-neutral-bg: #10131a;
+  --fc-today-bg: rgba(124, 196, 255, 0.15);
+  --fc-button-bg: #171922;
+  --fc-button-text: #e9eef4;
+  --fc-button-border: #2a2e36;
+
+  --badge-bg: #1a2b4a;
+  --badge-text: #9fd0ff;
+
+  --nav-button-bg: #1c2430;
+  --nav-button-secondary-bg: #2a3442;
+  --toggle-bg: #3b4656;
+}
+
+/* ---------------------------------------------------
+   다크 테마
+---------------------------------------------------- */
+:root[data-theme="dark"] {
+  --body-bg: #0b0c10;
+  --text-color: #e9eef4;
+
+  --fc-border-color: #1f2229;
+  --fc-bg: #0b0c10;
+  --fc-neutral-bg: #10131a;
+  --fc-today-bg: rgba(124, 196, 255, 0.15);
+  --fc-button-bg: #171922;
+  --fc-button-text: #e9eef4;
+  --fc-button-border: #2a2e36;
+
+  --badge-bg: #1a2b4a;
+  --badge-text: #9fd0ff;
+
+  --nav-button-bg: #1c2430;
+  --nav-button-secondary-bg: #2a3442;
+  --toggle-bg: #3b4656;
+}
+
+/* ---------------------------------------------------
+   라이트 테마
+---------------------------------------------------- */
+:root[data-theme="light"] {
+  --body-bg: #f6f7f9;
+  --text-color: #1b1d25;
+
+  --fc-border-color: #cdd2dd;
+  --fc-bg: #ffffff;
+  --fc-neutral-bg: #eef1f7;
+  --fc-today-bg: rgba(80, 145, 245, 0.15);
+  --fc-button-bg: #ffffff;
+  --fc-button-text: #1b1d25;
+  --fc-button-border: #c9cdd6;
+
+  --badge-bg: #d8e2ff;
+  --badge-text: #1d3c82;
+
+  --nav-button-bg: #ffffff;
+  --nav-button-secondary-bg: #d8e0f5;
+  --toggle-bg: #c2cbea;
+}
+
+/* ---------------------------------------------------
+   전체 Body 스타일
+---------------------------------------------------- */
+body {
+  font-family: "Pretendard", "Segoe UI", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------------
+   FullCalendar 스타일 (CSS 변수 기반)
+---------------------------------------------------- */
+.fc {
+  --fc-border-color: var(--fc-border-color);
+  --fc-page-bg-color: var(--fc-bg);
+  --fc-neutral-bg-color: var(--fc-neutral-bg);
+  --fc-today-bg-color: var(--fc-today-bg);
+  --fc-button-bg-color: var(--fc-button-bg);
+  --fc-button-text-color: var(--fc-button-text);
+  --fc-button-border-color: var(--fc-button-border);
+  --fc-now-indicator-color: #ffadad;
+}
+
+.fc-toolbar-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+}
+
+.fc-button {
+  border-radius: 8px !important;
+  font-weight: 500;
+  padding: 5px 12px !important;
+}
+
+/* 배지 */
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+}
+
+/* 날짜 숫자 */
+.fc .fc-daygrid-day-number {
+  color: var(--text-color) !important;
+}
+
+/* 요일 헤더 */
+.fc .fc-col-header-cell-cushion {
+  color: var(--text-color) !important;
+}
+
+/* 월/연도 제목 */
+.fc .fc-toolbar-title {
+  color: var(--text-color) !important;
+}
+
+/* 이벤트 텍스트 */
+.fc .fc-event-title,
+.fc .fc-event-time,
+.fc .fc-daygrid-event {
+  color: var(--text-color) !important;
+}
+
+/* 공통 페이지 레이아웃 */
+.page-root {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--text-color);
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 24px;
+}
